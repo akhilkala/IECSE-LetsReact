@@ -1,0 +1,115 @@
+.item {
+  font-size: 1rem;
+  margin: 1rem auto;
+  border-radius: 500rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  padding: 0.5rem;
+  -webkit-box-shadow: 3px 3px 5px #21212122;
+          box-shadow: 3px 3px 5px #21212122;
+}
+
+.item__name {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  width: 60%;
+  background-color: inherit;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.item__delete {
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: orangered;
+  opacity: 0.8;
+}
+
+.item__delete:hover {
+  background-color: orangered;
+  color: #fefefe;
+}
+
+.item__switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.item__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.item__slider:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.item__slider-input:checked + .item__slider {
+  background: #a2ce43;
+}
+
+.item__slider-input:checked + .item__slider::before {
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+}
+
+.item__switch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item--dark {
+  background-color: #f2f2f2;
+  color: #212121;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=item.css.map */
