@@ -1,0 +1,85 @@
+.add-list {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #eee;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.add-list__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.add-list__text span {
+  font-size: 1.5rem;
+  padding: 0 0.25rem;
+}
+
+.add-list__label {
+  border: 1px solid #fefefe;
+  height: 2.25rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.add-list__checkbox:checked ~ .add-list__label {
+  height: 7.75rem;
+}
+
+.add-list__input {
+  padding: 0.25rem;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.add-list__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.45rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-list__bottom i {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #21212188;
+}
+
+.add-list__bottom--dark i {
+  color: #fefefe;
+}
+
+.add-list__button {
+  background-color: #fefefe;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.add-list--dark {
+  background-color: inherit;
+  border-radius: 0;
+}
+/*# sourceMappingURL=addList.css.map */

@@ -1,0 +1,110 @@
+.list {
+  min-width: 22.5rem;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  color: #212121;
+  border-radius: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-shadow: 3px 3px 3px #21212122;
+  box-shadow: 3px 3px 3px #21212122;
+}
+
+@media (max-width: 425px) {
+  .list {
+    min-width: 20rem;
+  }
+}
+
+@media (max-width: 23.75em) {
+  .list {
+    min-width: 18rem;
+  }
+}
+
+.list__name {
+  cursor: pointer;
+}
+
+.list__delete {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  color: #21212188;
+}
+
+.list__delete:hover {
+  background-color: orangered;
+  color: #fefefe;
+}
+
+.list__delete--dark {
+  color: #fefefe;
+}
+
+.list__name {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid #f2f2f2;
+  width: 75%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #f2f2f2;
+}
+
+.list__name:focus {
+  border: 1px solid #212121;
+}
+
+.list__name--dark {
+  background-color: #333;
+  border: 1px solid #333;
+  color: #f2f2f2;
+}
+
+.list__name--dark:focus {
+  border: 1px solid #f2f2f2;
+}
+
+.list__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.list--dark {
+  background-color: #333;
+  color: #fefefe;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*# sourceMappingURL=list.css.map */
