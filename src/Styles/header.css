@@ -1,0 +1,122 @@
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__title {
+  font-size: 4rem;
+  padding-left: 3rem;
+  background: -webkit-linear-gradient(#2dc8ed, #548af0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 37.5em) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__title {
+    min-width: 2rem;
+  }
+}
+
+.header__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.header__switch-text {
+  margin-right: 1.5rem;
+}
+
+.header__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.header__slider:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header__slider-input:checked + .header__slider {
+  background: -webkit-linear-gradient(#2dc8ed, #548af0);
+}
+
+.header__slider-input:checked + .header__slider::before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.header__switch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.35rem;
+  padding: 0 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header--dark {
+  background-color: #1e1e21;
+  color: #f6f6f6;
+}
+/*# sourceMappingURL=header.css.map */

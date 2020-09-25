@@ -1,0 +1,60 @@
+.add-item {
+  height: 2.5rem;
+  border-radius: 5000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  background-color: inherit;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.5rem 0;
+}
+
+.add-item__input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .add-item__input {
+    font-size: 1rem;
+  }
+}
+
+.add-item__input--dark {
+  color: #fefefe;
+}
+
+.add-item__add i {
+  font-size: 1.35rem;
+  opacity: 0.65;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  color: #21212188;
+}
+
+@media (max-width: 425px) {
+  .add-item__add i {
+    font-size: 1.2rem;
+  }
+}
+
+.add-item__add i:hover {
+  opacity: 1;
+}
+
+.add-item__add--dark i {
+  color: #fefefe;
+}
+/*# sourceMappingURL=addItem.css.map */
